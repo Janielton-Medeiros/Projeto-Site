@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+.background {
+  background: url(./image/CAPA-CANAL.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.cabeçalho-link {
+  display: flex;
+  gap: 3rem;
+  font-weight: 300;
+  cursor: pointer;
+  position: sticky;
+  margin-left: center;
+}
+
+.cabeçalho-link a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.cabeçalho-link a:hover {
+  color: #0783b2;
+  transition: 0.3s all;
+}
+
+button {
+  color: #0783b2;
+  background: transparent;
+  border: solid 3px;
+  padding: 5px;
+  border-radius: 35px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+}
+
+button:hover {
+  background-color: #0783b2;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.container-text {
+  padding: 150px 0 0 130px;
+  margin-top: -70px;
+}
+
+.text h3 {
+  color: #fff;
+  font-size: 45px;
+}
+
+.text h1 {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.text span {
+  color: #0783b2;
+}
+
+.text p {
+  color: #fff;
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.redes-social {
+  margin-top: 20px;
+  font-size: 35px;
+  margin-left: -10px;
+}
+
+.redes-social a {
+  color: #0783b2;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.btn {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .cabeçalho-link {
+    display: none;
+  }
+}
+
+.fixarRodape {
+  bottom: 0;
+  position: fixed;
+  width: 90%;
+  text-align: center;
+  color: #0783b2;
+}
+footer a {
+  color: #0783b2;
+  padding-left: 10px;
+  text-align: center;
+}
+@media (max-width: 425px) {
+  .fixarRodape {
+    height: auto;
+  }
+  .redes-social {
+    font-size: 20px;
+    display: flex;
+    height: auto;
+  }
+  .cabeçalho-link {
+    font-size: 10px;
+    display: flex;
+    height: auto;
+  }
+}
